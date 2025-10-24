@@ -1,10 +1,13 @@
+# frozen_string_literal: true
+
+# A simple Dog class for rspec demonstration purposes
 class Dog
   def initialize(hunger_level: 0)
     @hunger_level = hunger_level
   end
 
   def bark
-    "woof!"
+    'woof!'
   end
 
   def feed
