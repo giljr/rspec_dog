@@ -3,7 +3,7 @@
 ### Making your tests _fast_, _stable_, and _joyful_ ❤️
 
 
-See how our Dog class + dog_spec.rb aligns:
+See how our _Dog class_ + _dog_spec.rb_ aligns:
 
 ### Step 1 — Identify messages (method calls)
 
@@ -27,13 +27,13 @@ Our Dog class:
 
 #### Observations:
 
-You don’t test private methods directly. You only test hungry?, feed, and bark from the outside → exactly what Sandi recommends.
+You don’t test private methods directly. You only test _hungry?_, _feed_, and _bark_ from the outside → exactly what Sandi recommends.
 
-You assert return values for queries (bark, hungry?) → correct.
+You assert return values for queries (_bark_, _hungry?_) → correct.
 
-You assert state change for commands (feed) → correct.
+You assert state change for commands (_feed_) → correct.
 
-No outgoing commands (interactions with other objects) → you’d use mocks/stubs here if there were.
+No outgoing commands (interactions with other objects) → you’d use _mocks/stubs_ here if there were.
 
 All tests are fast, simple, and focused on public behavior → aligns perfectly with “magic tricks” philosophy.
 
@@ -47,17 +47,17 @@ All tests are fast, simple, and focused on public behavior → aligns perfectly 
 
 ### Step 4 — Extra notes / best practices
 
-- You wrap tests in __describe__ and __context blocks__ → `keeps intent clear`.
+- You wrap tests in _describe_ and _context blocks_ → `keeps intent clear`.
 
-- You use __subject { ... }__ when you need a specific state → `aligns with testing “only what matters.”`
+- You use _subject { ... }_ when you need a specific state → `aligns with testing “only what matters.”`
 
-- You __avoid__ testing _internal variables_ directly → `good`.
+- You _avoid_ testing _internal variables_ directly → `good`.
 
-- If you **later** *introduce interactions* with other objects (observers, database, etc.) → you would use `mocks/stubs`.
+- If you later introduce interactions with other objects (_observers_, _database_, _etc._) → you would use `mocks/stubs`.
 
 ### Conclusion
 
-Your current Dog tests fully follow Sandi Metz’s rules:
+Your current _Dog_ tests fully follow Sandi Metz’s rules:
 ```text
 Test public messages only.
 
@@ -71,11 +71,11 @@ Simple, stable, fast tests with clear intent.
 ```
 ### 🔹 Why this works:
 
-“Resilient to change” is more natural than “can tolerate change.”
+_Resilient to change_ is more natural than _can tolerate change_.
 
-“Should depend on” or “couples only to” makes the cause-effect relationship clearer.
+_Should depend on_ or _couples only to_ makes the _cause-effect relationship_ clearer.
 
-“Stable components/parts” conveys the idea of reliable abstractions that rarely change.
+_Stable components/parts_ conveys the idea of _reliable abstractions_ that _rarely change_.
 
 .
 
