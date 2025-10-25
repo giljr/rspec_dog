@@ -69,12 +69,24 @@ Ignore private/internal methods.
 
 Simple, stable, fast tests with clear intent.
 ```
+### 🔹 Why this works:
+
+“Resilient to change” is more natural than “can tolerate change.”
+
+“Should depend on” or “couples only to” makes the cause-effect relationship clearer.
+
+“Stable components/parts” conveys the idea of reliable abstractions that rarely change.
+
+.
 
 __References__: [Rails Conf 2013 The Magic Tricks](https://youtu.be/URSWYvyc42M?si=pLaJWUMi4Fzo96wB) of Testing by [Sandi Metz](https://www.linkedin.com/in/sandi-metz-0932a84b/)
 
 ----
 
+.
 
 > __Good tests aren’t magic. They’re magic tricks — and you can learn them.__  
 >  ---
 > Sandi Metz
+
+.
